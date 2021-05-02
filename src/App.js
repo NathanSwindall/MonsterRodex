@@ -2,6 +2,7 @@ import "./styles.css";
 import React, { Component } from "react";
 import CardList from "../src/components/card-list/card-list.component";
 import SearchBox from "../src/components/search-box/search-box.component";
+import "./App.css";
 
 class App extends Component {
   constructor() {
@@ -28,7 +29,9 @@ class App extends Component {
     );
     return (
       <div className="App">
+        <h1>Monster Rolodex</h1>
         <SearchBox
+          className="searchBox"
           handleOnChange={(e) => this.setState({ searchValue: e.target.value })} // because anonymous it doesn't go the next one up
         />
         <CardList monsters={filterMonsters} />
