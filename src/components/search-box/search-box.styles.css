@@ -2,9 +2,13 @@
   -webkit-appearance: none;
   border: none;
   outline: none;
-  padding: 10px;
+  padding: 10px 10px;
   margin: auto;
   width: 150px;
   line-height: 30px;
   margin-bottom: 30px;
+}
+
+.searchBox > input {
+  padding: 10px;
 }
